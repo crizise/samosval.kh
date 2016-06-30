@@ -1,5 +1,6 @@
 #slides {
-  position: relative;
+  position: relative;   
+  
 }
 #slides .slides-container {
   display: none;
@@ -61,5 +62,6 @@
   text-indent: -100%;
 }
 .slides-pagination a.current {
-  background: #222;
+  background: #32323c;
+  text-align: justify;
 }

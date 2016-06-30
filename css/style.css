@@ -7,6 +7,97 @@
 	background-color:#A9A9A9;
 }
 .dark{
-	background-color: rgba(47,79,79,0.6);
-	z-index: 20;
+	background-color: rgba(47,79,79,0.8);
+	z-index: 1;
+	border-radius: 5px;
+	padding: 10px;
+}
+.gray_bg{
+	background-color: rgba(47,79,79,0.8);
+
+}
+/*#slides{
+	max-height: 1020px;
+	background: rgba(50, 50, 60, 0.5);
+	z-index:1;
+}*/
+#bannertext{
+
+}
+.jumbotron{
+	margin-top: 30px;
+}
+.white_text{
+	color: #ffffff;
+	opacity: 0.8;
+
+}
+.height-200{
+	height:200px;
+}
+
+.banner{
+
+	position: fixed;
+	width: 66.6%;
+	top: 33.3%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+}
+
+.aligncenter{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both; 
+}
+.banner hr{
+	width: 600px;
+	border: 1px solid black;
+}
+.text p{
+	text-indent: 1.5em;
+}
+.pad20{
+	padding: 20px;
+}
+.mar10{
+	margin: 10px;
+}
+.boxy{
+	border-left: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.boxy:hover{
+	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+.l_stripe{
+	height: 150px;
+}
+.delivery{
+	background: #eee;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 20px;
+}
+.delivery img{
+	height:200px;
+
+}
+.imgborder{
+	width:150px;
+	height: 150px;
+	border-color: orange;
+	border-radius: 50%;
+	margin: auto
+}
+.orange{
+	color: #ffffff;
+}
+.dbi{
+	display: inline-block;
 }
