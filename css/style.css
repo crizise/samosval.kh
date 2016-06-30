@@ -39,7 +39,7 @@
 .banner{
 
 	position: fixed;
-	width: 66.6%;
+	
 	top: 33.3%;
 	left: 0;
 	right: 0;
@@ -100,4 +100,14 @@
 }
 .dbi{
 	display: inline-block;
+}
+.footer-bg{
+	background:  linear-gradient(-45deg, #090909, #333);
+}
+.social-icon{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	float: left;
+	margin: 5px;
 }
