@@ -70,7 +70,8 @@
 					<label for="tel">Телефон:</label>
 					<input type="tel" class="form-control" id="tel" placeholder="099 123 4567">
 				</div>
-				<button type="submit" class="btn btn-success btn-lg">Перезвонить</button>
+				
+				<form action="/#cost/"><button type="submit" class="btn btn-success btn-lg">Перезвонить</button></form>
 			</form> 
 			<hr class="align_center ">
 			<h3 class="white_text">Укажите Ваши контактные данные и мы свяжемся в ближайшее время</h3> 
@@ -84,7 +85,9 @@
 	      </a>
 	    </nav>
   	</section>
-  	
+  	<!-- End of slides-->
+
+  	<!-- main content begin-->
 	<div class="container">
 		<div class="row jumbotron">
 			<div class="col-md-12 text">	
@@ -96,7 +99,7 @@
 		        <hr class="aligncenter ">
 		        <div class="text-center">
 					<button type="submit" class="btn btn-lg btn-success mar10 ">Связаться</button>
-					<button type="submit" class="btn btn-lg btn-warning mar10 ">Расчитать стоимость</button>
+					<button a type="submit" class="btn btn-lg btn-warning mar10 ">Расчитать стоимость</button>
 				</div>
 			</div>
 		</div>
@@ -159,11 +162,72 @@
 				</div>
 			</div>	
 	</div>
-	<div class="container-fluid">
-		<div class="row" id="lanscape">
-			<img src="img/landscape.jpg" alt="mine landscape" style="width:100%; height:410px;">
+	<div class="container-fluid landscape-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 dark mar10 text-center">
+					<h3 class="white ">Расчитать стоимость доставки</h3>
+					<hr class="aligncenter">
+					<form action="" id="costs">
+						<label for="from">Откуда
+							<select name="" id="from" class="form-control">
+								<option value="">Основа</option>
+								<option value="">Павлово Поле</option>
+								<option value="">Шатиловка</option>
+								<option value="">поселок Жуковского</option>
+								<option value="">Новые Дома</option>
+								<option value="">Рогань</option>
+							</select>
+						</label>
+						<label for="from" >Куда
+							<select name="" id="from" class="form-control">
+								<option value="">Алексеевка</option>
+								<option value="">Павлово Поле</option>
+								<option value="">Шатиловка</option>
+								<option value="">поселок Жуковского</option>
+								<option value="">Новые Дома</option>
+								<option value="">Рогань</option>
+							</select>
+						</label>
+						<br>
+
+						<label>Объем<input class="mar10" type="number" max="7" min="0" value="1" placeholder="вес в тоннах"></label>
+						<br>
+						<label for="tel">Телефон:
+						<input type="tel" class="form-control" id="tel" placeholder="099 123 4567"></label>
+						<label for="tel">Вас зовут:
+						<input type="text" class="form-control" id="name" placeholder="Имя"></label>
+						<hr class="aligncenter">	
+						<button type="success" class="btn btn-success">Расчитать</button>		
+					</form>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
 		</div>
-	</div>
+		<!-- <div class="row" id="landscape">
+			<img src="img/landscape.jpg" alt="mine landscape" style="width:100%; height:410px;">
+		</div> -->
+		
+	</div> 
+	<!-- <div class="container-fluid ">
+		<div class="row landscape-bg"></div>	
+			<div class="container">
+				<div class="price-form">
+					<h3>Расчитать стоимость</h3>
+					<form action="" method="post">
+						<label for=""></label>
+						<label for=""></label>
+						<label for=""></label>
+						<label for=""></label>
+						<label for=""></label>
+						<label for=""></label>
+						<button><input type="text"></button>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</div> -->
 	<div class="container">
 		<h1 class="text-center">Наши клиенты</h1>
 		<div class="row">
@@ -195,22 +259,32 @@
 			</div>
 		</div>
 	</div>
-			<!--footer -->
+	<!--main content end-->
+	<!--footer -->
 	<div class="container-fluid footer-bg">
 		<div class="container ">
 			<div class="row">
-					<div class="col-md-4 col-xs-12">
-						<img src="img/logo.jpg" alt="logo">
+					<div class="col-md-4 col-xs-12 text-center">
+						<img src="img/logo.jpg" alt="logo" class="logo">
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<div class="social">
-							<img src="img/fbook.jpg" alt="fb" class="img-responsive dbi social-icon">
-							<img src="img/vk.jpg" alt="vk" class="img-responsive dbi social-icon">
-							<img src="img/instagram.jpg" alt="instagram" class="img-responsive dbi social-icon">
-							<img src="img/google.jpg" alt="googleplus" class="img-responsive dbi social-icon">
+							<a href="#"><img src="img/fbook.jpg" alt="fb" class="img-responsive dbi social-icon"></a>
+							<a href="#"><img src="img/vk.jpg" alt="vk" class="img-responsive dbi social-icon"></a>
+							<a href="#"><img src="img/instagram.jpg" alt="instagram" class="img-responsive dbi social-icon"></a>
+							<a href="#"><img src="img/google.jpg" alt="googleplus" class="img-responsive dbi social-icon"></a>
 						</div>
 					</div>
-				<div class="col-md-4 col-xs-12"></div>
+				<div class="col-md-4 col-xs-12 text-left contacts">
+					<div class="phone">
+						<p class="white "><span class="glyphicon glyphicon-earphone white"></span>
+						+38 066 731 6550</p>
+					</div>
+					<div class="mailto">
+						<span class="glyphicon glyphicon-envelope white"></span>
+						<a href="mailto:info@samosval.kh.ua">info@samosval.kh.ua</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -278,11 +352,6 @@
 		        EasyPeasyParallax();
 		    });
 		});
-    </script>
-    <script>
-	    $( document ).click(function() {
-	  		$( "#lanscape" ).toggle( "slide");
-	  	});
-	</script>  		
+    </script>	
 </body>
 </html>
